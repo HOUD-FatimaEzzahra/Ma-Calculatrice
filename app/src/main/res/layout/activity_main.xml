@@ -14,11 +14,9 @@
         android:layout_height="229dp"
         android:layout_weight="1"
         android:background="#000"
-        android:gravity="bottom"
         android:maxLines="1"
         android:padding="10dp"
         android:text=""
-        android:textAlignment="viewEnd"
         android:textColor="#f6f6f6"
         android:textSize="30sp">
 
@@ -27,21 +25,19 @@
     <TextView
         android:id="@+id/tvmain"
         android:layout_width="match_parent"
-        android:layout_height="479dp"
+        android:layout_height="422dp"
         android:layout_weight="2"
         android:background="#000"
-        android:gravity="bottom"
         android:maxLines="1"
         android:padding="10dp"
         android:text=""
-        android:textAlignment="viewEnd"
         android:textColor="#fff"
         android:textSize="50sp">
 
     </TextView>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="452dp"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:weightSum="7">
@@ -234,10 +230,49 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="#000"
+                        android:onClick="setOperator"
                         android:text="+"
                         android:textColor="#AA336A"
-                        android:textSize="30sp"
-                        android:onClick="setOperator">
+                        android:textSize="30sp">
+
+                    </Button>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="312dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <Button
+                        android:id="@+id/b0"
+                        android:layout_width="305dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#000"
+                        android:onClick="ajouterNbr"
+                        android:text="0"
+                        android:textColor="#fff"
+                        android:textSize="30sp">
+
+                    </Button>
+
+
+                    <Button
+                        android:id="@+id/bdiv"
+                        android:layout_width="105dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#000"
+                        android:onClick="setOperator"
+                        android:text="/"
+                        android:textColor="#AA336A"
+                        android:textSize="30sp">
 
                     </Button>
                 </LinearLayout>
@@ -253,63 +288,38 @@
                     android:orientation="horizontal"
                     android:weightSum="4">
 
+
                     <Button
-                        android:id="@+id/b0"
-                        android:layout_width="match_parent"
+                        android:id="@+id/bc"
+                        android:layout_width="205dp"
                         android:layout_height="match_parent"
+                        android:layout_span="2"
                         android:layout_weight="1"
                         android:background="#000"
-                        android:onClick="ajouterNbr"
-                        android:text="0"
-                        android:textColor="#fff"
+                        android:onClick="clean"
+                        android:text="c"
+                        android:textColor="#AA336A"
                         android:textSize="30sp">
 
                     </Button>
 
                     <Button
-                        android:id="@+id/bc"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="#000"
-                        android:text="c"
-                        android:textColor="#AA336A"
-                        android:textSize="30sp"
-                        android:onClick="clean" >
-
-                    </Button>
-
-                    <Button
                         android:id="@+id/bequal"
-                        android:layout_width="match_parent"
+                        android:layout_width="202dp"
                         android:layout_height="match_parent"
+                        android:layout_span="2"
                         android:layout_weight="1"
                         android:background="#000"
+                        android:onClick="calculer"
                         android:text="="
                         android:textColor="#AA336A"
-                        android:textSize="30sp"
-                        android:onClick="calculer">
+                        android:textSize="30sp">
 
                     </Button>
 
-                    <Button
-                        android:id="@+id/bdiv"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="#000"
-                        android:text="/"
-                        android:textColor="#AA336A"
-                        android:textSize="30sp"
-                        android:onClick="setOperator">
-
-                    </Button>
                 </LinearLayout>
             </TableRow>
-
         </TableLayout>
 
-
     </LinearLayout>
-
 </LinearLayout>
