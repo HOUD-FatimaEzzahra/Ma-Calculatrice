@@ -17,10 +17,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         bc=findViewById(R.id.bc);
         mainView=findViewById(R.id.tvmain);
         secView=findViewById(R.id.tvsec);
+        afficherMain();
+        afficherSec();
+
 
         bc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,7 +40,12 @@ public class MainActivity extends AppCompatActivity {
         mainView.setText(currentOperand);
     }
     private void afficherSec() {
-        String currentOperand = isOp1 ? String.valueOf(valeur1) : String.valueOf(valeur2);
+       // String currentOperand = isOp1 ? String.valueOf(valeur1) : String.valueOf(valeur2);
+        String currentOperand;
+        if(isOp1)
+            currentOperand=String.valueOf(valeur1);
+          else
+            currentOperand= String.valueOf(valeur2);
         secView.setText(currentOperand);
     }
     /*  public void setOperator(View view) {
