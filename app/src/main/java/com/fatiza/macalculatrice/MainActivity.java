@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         afficherSec();
 
 
-        bc.setOnClickListener(new View.OnClickListener() {
+      /*  bc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 valeur1 = 0;
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 afficherMain();
                 afficherSec();
             }
-        });
+        });*/
     }
     private void afficherMain() {
         String currentOperand = isOp1 ? String.valueOf(valeur1) : String.valueOf(valeur2);
