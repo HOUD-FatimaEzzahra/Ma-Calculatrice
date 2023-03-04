@@ -1,5 +1,30 @@
-<resources>
-    <string name="app_name">Scientific Calculator</string>
+# ScientificCalculator
+
+Here are the colors:
+
+    <!-- Colors for the background -->
+    <color name="blackStart">#060607</color>
+    <color name="blueBlack">#111f28</color>
+    <color name="greyEnd">#484e52</color>
+
+    <!-- Colors to add a little pop to the buttons -->
+    <color name="greyAccent">#afb9c5</color>
+    <color name="tanAccent">#e3cdb3</color>
+
+    <!-- Clear Button Colors -->
+    <color name="redBackground">#5a020b</color>
+    <color name="redAccent">#ff0000</color>
+
+    <!-- Equals Button Colors -->
+    <color name="greenBackground">#013300</color>
+    <color name="greenAccent">#2ffd64</color>
+
+    <!-- Math Operator Button Colors -->
+    <color name="purpleBackground">#330133</color>
+    <color name="purpleAccent">#de00de</color>
+
+Here are the strings:
+
     <string name="oneText">1</string>
     <string name="twoText">2</string>
     <string name="threeText">3</string>
@@ -38,4 +63,3 @@
     <string name="isPrimeFunctionText">prime</string>
 
     <string name="backspace"> </string>
-</resources>

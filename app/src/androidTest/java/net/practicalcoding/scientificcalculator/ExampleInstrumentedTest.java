@@ -1,4 +1,4 @@
-package com.fatiza.macalculatrice;
+package net.practicalcoding.scientificcalculator;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.fatiza.macalculatrice", appContext.getPackageName());
+        assertEquals("net.practicalcoding.scientificcalculator", appContext.getPackageName());
     }
 }

@@ -3,13 +3,12 @@ plugins {
 }
 
 android {
-    namespace 'com.fatiza.macalculatrice'
-    compileSdk 33
+    compileSdkVersion 29
 
     defaultConfig {
-        applicationId "com.fatiza.macalculatrice"
-        minSdk 24
-        targetSdk 33
+        applicationId "net.practicalcoding.scientificcalculator"
+        minSdkVersion 23
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
@@ -30,11 +29,11 @@ android {
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.5.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
-    implementation 'com.faendir.rhino:rhino-android:1.5.2'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation files('libs\\MathParser.org-mXparser-v.4.4.0-jdk8.jar')
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }

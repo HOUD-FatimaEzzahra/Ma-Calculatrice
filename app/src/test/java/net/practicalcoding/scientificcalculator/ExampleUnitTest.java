@@ -1,4 +1,4 @@
-package com.fatiza.macalculatrice;
+package net.practicalcoding.scientificcalculator;
 
 import org.junit.Test;
 
